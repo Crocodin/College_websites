@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./styles/home.css">
+  <link rel="stylesheet" href="./styles/contianer_flip.css">
+  <title>Contribuții românești la dezvoltarea științei și tehnicii</title>
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+  </style>
+</head>
+<body>
+  <!-- video + start -->
+  <div class="main-screan">
+    <video src="./media/video/CR_background.mp4" autoplay loop muted></video>
+    <div class="overlay"></div>
+    <div class="main-screan-text">
+      <h1 class="titlu">Contribuții românești la dezvoltarea științei și tehnicii</h1>
+      <a href="#start">
+        <div class="flip-button">
+          <div class="flip-inner">
+            <div class="flip-container-front">
+              <h1>Începe lecția</h1>
+            </div>
+            <div class="flip-container-back">
+              <h1>Începe lecția</h1>
+            </div>
+          </div>
+        </div>
+      </a>
+    </div>
+  </div>
+
+  <!-- al doilea sector : selectarea -->
+  <div class="main-selector" id="start">
+    <main class="select-screan">
+      <!-- seclectare: Contribuții științifice -->
+      <article>
+        <div class="flip-container">
+          <div class="flip-inner">
+            <div class="flip-container-front">
+              <h1>Contribuții științifice</h1>
+            </div>
+            <div class="flip-container-back">
+              <main>
+                <article class="top-article"><a href="#matematica">Matematică</a></article>
+                <article><a href="#fizica">Fizică</a></article>
+                <article><a href="#medicina">Medicină</a></article>
+                <article class="bottom-article"><a href="#biologie">Biologie</a></article>
+              </main>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <!-- selectare: Contribuții tehnice -->
+      <article>
+        <div class="flip-container">
+          <div class="flip-inner">
+            <div class="flip-container-front">
+              <h1>Contribuții tehnice</h1>
+            </div>
+            <div class="flip-container-back">
+              <main>
+                <article></article>
+                <article><a href="#aeronautica">Aeronautică</a></article>
+                <article><a href="#arhitectura">Arhitectură</a></article>
+                <article></article>
+              </main>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <!-- selectare: Testează-ți cunoștințele -->
+      <article>
+        <div class="flip-container">
+          <div class="flip-inner">
+            <div class="flip-container-front">
+              <h1>Testează-ți cunoștințele</h1>
+            </div>
+            <div class="flip-container-back">
+              <main>
+                <article><a href="./quiz/quiz_1.html">Test contribuții științifice</a></article>
+                <article><a href="./quiz/quiz_2.html">Test contribuții tehnice</a></article>
+                <article><a href="./quiz/quiz_3.html">Test contribuții</a></article>
+              </main>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <!-- selectare: options -->
+      <article>
+        <main class="special" id="codrin">
+          <!-- selectare: options => harta -->
+          <article>
+            <a href="./harta.html">
+              <div class="flip-button">
+                <div class="flip-inner top">
+                  <div class="flip-container-front">
+                    <h1>Hartă</h1>
+                  </div>
+                  <div class="flip-container-back">
+                    <h1>Hartă</h1>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </article>
+
+          <!-- selectare: options => dex -->
+          <article>
+            <a href="./dex.html">
+              <div class="flip-button">
+                <div class="flip-inner">
+                  <div class="flip-container-front">
+                    <h1>Dicționar</h1>
+                  </div>
+                  <div class="flip-container-back">
+                    <h1>Dicționar</h1>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </article>
+
+          <!-- selectare: options => anexa -->
+          <article>
+            <a href="./anexa.html">
+              <div class="flip-button">
+                <div class="flip-inner bot">
+                  <div class="flip-container-front">
+                    <h1>Anexă</h1>
+                  </div>
+                  <div class="flip-container-back">
+                    <h1>Anexă</h1>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </article>
+        </main>
+      </article>      
+    </main>
+  </div>
+
+  <!-- inventator / contribuitori -->
+  <div class="options-screen">
+    <div class="options-selection">
+      <!-- option-categorie => matematică -->
+      <div class="opus_light">
+        <div class="option-categorie" id="matematica">
+          <h1>Matematică</h1>
+          <main>
+            <article>
+              <a href="./contribuitori/Grigore_Moisil.html">
+                <div class="flip-container img-flip">
+                  <div class="flip-inner">
+                    <div class="flip-container-front">
+                      <img src="./media/contribuitori/mate/Grigore C. Moisil/Grigore_Moisil.jpg" alt="Grigore Moisil">
+                    </div>
+                    <div class="flip-container-back">
+                      <h1>Grigore Moisil</h1>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </article>
+            <article>
+              <a href="./contribuitori/Spiru_Haret.html">
+                <div class="flip-container img-flip">
+                  <div class="flip-inner">
+                    <div class="flip-container-front ">
+                      <img src="./media/contribuitori/mate/Spiru Haret/Spiru_Haret.jpg" alt="Spiru Haret">
+                    </div>
+                    <div class="flip-container-back">
+                      <h1>Spiru Haret</h1>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </article>
+          </main>
+        </div>
+      </div>
+
+      <!-- option-categorie => fizică -->
+      <div class="light">
+        <div class="option-categorie" id="fizica">
+          <h1>Fizică</h1>
+          <main>
+            <article>
+              <a href="./contribuitori/George Constantinescu.html">
+                <div class="flip-container img-flip">
+                  <div class="flip-inner">
+                    <div class="flip-container-front">
+                      <img src="./media/contribuitori/fizica/George Constantinescu/George_Constantinescu.jpg" alt="George (Gogu) Constantinescu">
+                    </div>
+                    <div class="flip-container-back">
+                      <h1>George (Gogu) Constantinescu</h1>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </article>
+          </main>
+        </div>
+      </div>
+      
+      <!-- option-categorie => medicină -->
+      <div class="opus_light">
+        <div class="option-categorie" id="medicina">
+          <h1>Medicină</h1>
+          <main>
+            <article>
+              <a href="./contribuitori/Ana_Aslan.html">
+                <div class="flip-container img-flip">
+                  <div class="flip-inner">
+                    <div class="flip-container-front">
+                      <img src="./media/contribuitori/medicina/Ana Aslan/Ana_Aslan_1970.jpg" alt="Ana Aslan">
+                    </div>
+                    <div class="flip-container-back">
+                      <h1>Ana Aslan</h1>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </article>
+            <article>
+              <a href="./contribuitori/Constantin_Parhon.html">
+                <div class="flip-container img-flip">
+                  <div class="flip-inner">
+                    <div class="flip-container-front">
+                      <img src="./media/contribuitori/medicina/Constantin Parhon/CI_Parhon.jpg">
+                    </div>
+                    <div class="flip-container-back">
+                      <h1>Constantin Ion Parhon</h1>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </article>
+            <article>
+              <a href="./contribuitori/Florica Bagdasar.html">
+                <div class="flip-container img-flip">
+                  <div class="flip-inner">
+                    <div class="flip-container-front">
+                      <img src="./media/contribuitori/medicina/Florica Bogdasar/florica_bogdasar.png" alt="Florica Bogdasar">
+                    </div>
+                    <div class="flip-container-back">
+                      <h1>Florica Bogdasar</h1>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </article>
+            <article>
+              <a href="./contribuitori/Nicolae_Paulescu.html">
+                <div class="flip-container img-flip">
+                  <div class="flip-inner">
+                    <div class="flip-container-front">
+                      <img src="./media/contribuitori/medicina/Nicolae Paulescu/Nicolae_Constantin_Paulescu.jpg" alt="Nicolae Constantin Paulescu">
+                    </div>
+                    <div class="flip-container-back">
+                      <h1>Nicolae Constantin Paulescu</h1>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </article>
+          </main>
+        </div>
+      </div>
+      
+      <!-- option-categorie => biologie -->
+      <div class="light">
+        <div class="option-categorie" id="biologie">
+          <h1>Biologie</h1>
+          <main>
+            <article>
+              <a href="./contribuitori/Grigore_Palade.html">
+                <div class="flip-container img-flip">
+                  <div class="flip-inner">
+                    <div class="flip-container-front">
+                      <img src="./media/contribuitori/biologie/Grigore Palade/10-08GeorgePaladeBIG.jpg" alt="George Palade">
+                    </div>
+                    <div class="flip-container-back">
+                      <h1>George Palade</h1>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </article>
+            <article>
+              <a href="./contribuitori/Elisa Zamfirescu.html">
+                <div class="flip-container img-flip">
+                  <div class="flip-inner">
+                    <div class="flip-container-front">
+                      <img src="./media/contribuitori/biologie/Elisa Zamfirescu/ZamfirescuLab.jpg" alt="Elisa Zamfirescu">
+                    </div>
+                    <div class="flip-container-back">
+                      <h1>Elisa Zamfirescu</h1>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </article>
+            <article>
+              <a href="./contribuitori/Emil_Racovita.html">
+                <div class="flip-container img-flip">
+                  <div class="flip-inner">
+                    <div class="flip-container-front">
+                      <img src="./media/contribuitori/biologie/Emil Racovita/Emil-Racovita.jpg" alt="Emil Racovita">
+                    </div>
+                    <div class="flip-container-back">
+                      <h1>Emil Racovita</h1>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </article>
+            <article>
+              <a href="./contribuitori/Grigore_Antipa.html">
+                <div class="flip-container img-flip">
+                  <div class="flip-inner">
+                    <div class="flip-container-front">
+                      <img src="./media/contribuitori/biologie/Grigore Antipa/Grigore Antipa.png" alt="Grigore Antipa">
+                    </div>
+                    <div class="flip-container-back">
+                      <h1>Grigore Antipa</h1>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </article>
+            <article>
+              <a href="./contribuitori/Victor_Babes.html">
+                <div class="flip-container img-flip">
+                  <div class="flip-inner">
+                    <div class="flip-container-front">
+                      <img src="./media/contribuitori/biologie/Victor Babes/victor_babes.png" alt="Victor Babes">
+                    </div>
+                    <div class="flip-container-back">
+                      <h1>Victor Babeș</h1>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </article>
+          </main>
+        </div>
+      </div>
+      
+      <!-- option-categorie => aeronautica -->
+      <div class="opus_light">
+        <div class="option-categorie" id="aeronautica">
+          <h1>Aeronautică</h1>
+          <main>
+            <article>
+              <a href="./contribuitori/Aurel_Vlaicu.html">
+                <div class="flip-container img-flip">
+                  <div class="flip-inner">
+                    <div class="flip-container-front">
+                      <img src="./media/contribuitori/aeronautica/Aurel Vlaicu/Aurel_Vlaicu.jpg" alt="Aurel Vlaicu">
+                    </div>
+                    <div class="flip-container-back">
+                      <h1>Aurel Vlaicu</h1>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </article>
+            <article>
+              <a href="./contribuitori/Henri_Coanda.html">
+                <div class="flip-container img-flip">
+                  <div class="flip-inner">
+                    <div class="flip-container-front">
+                      <img src="./media/contribuitori/aeronautica/Henri Coanda/POZA-4-5.jpg" alt="Henri Coanda">
+                    </div>
+                    <div class="flip-container-back">
+                      <h1>Henri Coandă</h1>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </article>
+            <article>
+              <a href="./contribuitori/Traian_Vuia.html">
+                <div class="flip-container img-flip">
+                  <div class="flip-inner">
+                    <div class="flip-container-front">
+                      <img src="./media/contribuitori/aeronautica/Traian Vuia/Traian_Vuia.jpg" alt="Traina Vuia">
+                    </div>
+                    <div class="flip-container-back">
+                    <h1>Traian Vuia</h1>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </article>
+          </main>
+        </div>
+      </div>
+
+      <!-- option-categorie => arhitectură -->
+      <div class="light">
+        <div class="option-categorie" id="arhitectura">
+          <h1>Arhitectură</h1>
+          <main>
+            <article>
+              <a href="./contribuitori/Anghel_Saligny.html">
+                <div class="flip-container img-flip">
+                  <div class="flip-inner">
+                    <div class="flip-container-front">
+                      <img src="./media/contribuitori/arhitectura/Anghel Saligny/Anghel_Saligny.jpg" alt="Anghel Saligny">
+                    </div>
+                    <div class="flip-container-back">
+                      <h1>Anghel Saligny</h1>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </article>
+          </main>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="./styles/home.js"></script>
+</body>
+</html>

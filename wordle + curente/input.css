@@ -1,0 +1,42 @@
+
+.enter_text {
+  position: relative;
+}
+
+.autocomplete_items {
+  position: absolute;
+  top: -40px;
+}
+
+/* ---------------------------------------- */
+
+.autocomplete_items {
+  border-bottom: none;
+  border-top: none;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  right: calc((50% - var(--enter_width) + 60px / 2 - 6px) / 2);
+  height: var(--enter_height);
+  width: var(--enter_width);
+}
+
+.autocomplete_items div {
+  padding: 10px;
+  cursor: pointer;
+  background-color: #fff; 
+  border-bottom: 1px solid #d4d4d4; 
+  border-right: 1px solid #212121;
+  border-left: 1px solid #212121;
+  font-family: myFirstFont;
+}
+
+.autocomplete_items div:nth-child(1) {
+  border-radius: 10px 10px 0 0;
+  border-top: 1px solid #212121;
+}
+
+.autocomplete_items div:hover {
+  background-color: #e9e9e9; 
+}

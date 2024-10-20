@@ -1,0 +1,57 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.main-body {
+  background-image: url("../media/background/background.jpg");
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+}
+
+:root {
+  --svg-fill : #F2E8CF;
+  --svg-stroke : #386641;
+  --svg-stroke-width : 2;
+  --svg-hover-fill : #6A994E;
+  --svg-locuit-fill : #A7C957;
+  --but-w : 165px;
+  --but-h : 60px;
+}
+
+.svg-img {
+  margin: auto;
+  height: 1000%;
+}
+
+.map-svg {
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5px;
+}
+
+svg path {
+  fill: var(--svg-fill);
+  stroke: var(--svg-stroke);
+  stroke-width: var(--svg-stroke-width);
+}
+
+.locuit {
+  fill: var(--svg-locuit-fill);
+  position: relative;
+}
+
+svg path.locuit:hover {
+  fill: var(--svg-hover-fill);
+  transition: 0.2s;
+  cursor: pointer;
+}
+
+#go_back {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+}

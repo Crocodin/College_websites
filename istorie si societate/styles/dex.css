@@ -1,0 +1,127 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+:root {
+  --background-border-color: #F2E8CF;
+  --cuvant-font-size: 30px;
+  --definiții-font-size: 18px;
+  --font-family: 'Poppins', sans-serif;
+  --border-background: #A7C957;
+}
+
+body > * {
+  position: relative;
+  background-image: url("../media/background/background.jpg");
+  background-size: contain;
+}
+
+.gard {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+.border {
+  border-radius: 10px;
+  margin-inline: 10%;
+  margin-top: 5%;
+  background-color: var(--background-border-color);
+  border: 4px solid var(--border-background);
+}
+
+.border.first {
+  margin-top: 10%;
+}
+
+.cuvint-necunoscut {
+  padding: 10px;
+}
+
+.cuvant {
+  font-size: var(--cuvant-font-size);
+}
+
+.cuvant-border {
+  background-image: linear-gradient(to right, transparent, #000, transparent);
+  height: 2px;
+  width: calc(100% + 20px);
+  margin-left: -10px;
+}
+
+.definiții {
+  margin-block: 5px;
+  margin-left: 10px;
+  display: grid;
+  gap: 5px;
+  font-size: var(--definiții-font-size);
+  font-family: var(--font-family);
+}
+
+@media screen and (max-width: 768px) {
+  body > *::after {
+    --hight-for-img: calc(100vw / 4);
+    --width-for-img: calc(100vw * 1.5);
+
+    content: "";
+    background-image: url("../media/transition/h_transition_small.png");
+    background-size: cover;
+    height: var(--hight-for-img);
+    width: var(--width-for-img);
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: calc(50vw * -1);
+    z-index: 1;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  body > *::after {
+    --hight-for-img: calc(100vw / 8);
+    --width-for-img: 100%;
+
+    content: "";
+    background-image: url("../media/transition/h_transition_big.png");
+    background-size: cover;
+    height: var(--hight-for-img);
+    width: var(--width-for-img);
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+  }
+
+  .border {
+    border-radius: 10px;
+    margin-inline: 10%;
+    margin-top: 2.5%;
+    background-color: var(--background-border-color);
+  }
+  
+  .border.first {
+    margin-top: 5%;
+  }
+}
+
+.numar {
+  font-weight: bold;
+  font-style: normal;
+  margin-right: 5px;
+  font-family: var(--font-family);
+}
+
+.end-spaceing {
+  height: 140px;
+}
+
+.im-out {
+  margin-top: 20px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 3;
+}

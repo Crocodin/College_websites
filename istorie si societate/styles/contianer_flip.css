@@ -1,0 +1,168 @@
+
+:root {
+  --backgroun-color: #bee3db;
+  --container-background-color: #e8c44c;
+  --container-text-color: rgb(255, 255, 255);
+  --container-front-text-size: 30px;
+  --container-back-text-size: 16px;
+  --button-text-size: 16px;
+  --button-background-color: #A7C957;
+  --img-flip-background-color : #A7C957;
+  --flip-container-width: calc(100vw / 2.5);
+  --flip-container-height: 201px;
+  --button-size-width: 220px;
+  --button-size-height: 60px;
+  --img-flip-size-width: 160px;
+  --img-flip-size-height: 201px;
+}
+
+* {
+  text-decoration: none;
+}
+
+.flip-container {
+  /* aceasta este un div invizibil care lucreaza ca un hover point */
+  width: var(--flip-container-width);
+  height: var(--flip-container-height);
+}
+
+.img-flip {
+  width: var(--img-flip-size-width) !important;
+  height: var(--img-flip-size-height) !important;
+}
+
+.img-flip .flip-inner {
+  background-color: var(--img-flip-background-color) !important;
+}
+
+.flip-inner {
+  background-color: var(--container-background-color);
+  color: var(--container-text-color);
+  width: 100%;
+  height: 100%;
+  border-radius: 15px;
+  /* conditiile pentru animatie */
+  transition-duration: .8s;
+  transform-style: preserve-3d;
+}
+
+.flip-container:hover .flip-inner,
+.flip-button:hover .flip-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-container-front,
+.flip-container-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden; /* Safari */
+  transform: rotateX(0deg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.flip-container-back {
+  transform: rotateY(180deg);
+  position: relative;
+}
+
+.flip-container-front h1,
+.flip-container-back h1 {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  cursor: pointer;
+  font-size: var(--container-front-text-size);
+}
+
+.flip-container-front img {
+  width: 100%;
+  height: 100%;
+  border-radius: 15px;
+  cursor: pointer;
+}
+
+.flip-container-back main {
+  width: 100%;
+  height: 100%;
+  display: grid;
+}
+
+.flip-container-back main article a,
+.flip-container-back main article {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  height: 100%;
+}
+
+.flip-container-back main article a {
+  cursor: pointer;
+  text-decoration: none;
+  font-size: var(--container-back-text-size);
+  color: var(--container-text-color);
+}
+
+.flip-button {
+  width: var(--button-size-width);
+  height: var(--button-size-height);
+}
+
+.flip-button .flip-container-front h1,
+.flip-button .flip-container-back h1 {
+  font-size: var(--button-text-size);
+}
+
+.flip-button .flip-inner,
+.flip-button .flip-inner {
+  background-color: var(--button-background-color);
+}
+
+/* special style for selector => options */
+
+.special .flip-button {
+  width: var(--flip-container-width);
+  height: calc(var(--flip-container-height) / 3);
+}
+
+.special .flip-button .flip-inner,
+.special .flip-button .flip-inner {
+  background-color: var(--container-background-color);
+}
+
+.special .flip-inner {
+  border-radius: 0;
+}
+
+.top {
+  border-top-left-radius: 15px !important;
+  border-top-right-radius: 15px !important;
+} 
+
+.bot {
+  border-bottom-left-radius: 15px !important;
+  border-bottom-right-radius: 15px !important;
+} 
+
+@media screen and (min-width: 1300px) {
+  :root {
+    --button-size-width: 260px;
+    --button-size-height: 85px;
+    --button-text-size: 26px;
+    --flip-container-width: 300px;
+    --flip-container-height: 360px;
+    --container-front-text-size: 40px;
+    --container-back-text-size: 26px;
+    --img-flip-size-width: 280px;
+    --img-flip-size-height: 360px;
+  }
+}
+

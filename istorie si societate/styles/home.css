@@ -1,0 +1,357 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* primul sector : vidoe + text */
+
+.main-screan {
+  position: relative;
+}
+
+.main-screan > video {
+  width: 100%;
+  object-fit: cover;
+  opacity: .8;
+  height: 50vh;
+}
+
+.main-screan::after {
+  --hight-for-img: calc(100vw * 0.55);
+
+  content: "";
+  background-image: url("../media/transition/transition_small.png");
+  position: absolute;
+  left: 0;
+  right: 0;
+  background-size: 100% 100%;
+  height: var(--hight-for-img);
+  bottom: calc(-1 * var(--hight-for-img) / 1.55);
+  z-index: 1;
+}
+
+.main-screan-text,
+.main-screan > .overlay {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.main-screan > .overlay {
+  background-color: rgb(0, 0, 0);
+  opacity: .5;
+  z-index: 1;
+}
+
+.main-screan-text  {
+  color: rgb(255, 255, 255);
+  z-index: 2;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: column;
+}
+
+.titlu {
+  --font-size-titlu: 30px;
+  font-size: var(--font-size-titlu);
+  text-align: center;
+  padding-inline: 20px;
+}
+
+.main-screan-text > a {
+  display: none;
+}
+
+/* al doilea sector : selectarea */
+
+.options-screen,
+.main-selector {
+  width: 100%;
+  background-image: url("../media/background/background.jpg");
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+  scroll-margin: -270px;
+}
+
+.select-screan {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-items: center;
+  gap: 1rem;
+}
+
+#codrin > article:nth-child(2)::after,
+.select-screan > article:nth-child(4),
+.select-screan > article:nth-child(3),
+.select-screan > article:nth-child(2) {
+  position: relative;
+}
+
+#codrin > article:nth-child(2)::after,
+.select-screan > article:nth-child(4)::after {
+  --hight-for-img: calc(100vw / 4);
+  --width-for-img: calc(100vw / 2.5);
+
+  content: "";
+  background-image: url("../media/caracters/holding.png");
+  background-size: cover;
+  height: var(--hight-for-img);
+  width: var(--width-for-img);
+  display: block;
+  position: absolute;
+  bottom: calc(var(--hight-for-img) * -1);
+  right: 0;
+  z-index: 1;
+}
+
+.select-screan > article:nth-child(3)::before,
+.select-screan > article:nth-child(2)::before {
+  --hight-for-img: 90px;
+  --width-for-img: 100px;
+
+  content: "";
+  background-image: url("../media/caracters/kid.png");
+  background-size: cover;
+  height: var(--hight-for-img);
+  width: var(--width-for-img);
+  display: block;
+  position: absolute;
+  top: calc(var(--hight-for-img) * -1);
+  right: 20px;
+  z-index: 1;
+}
+
+#codrin > article:nth-child(2)::after,
+.select-screan > article:nth-child(3)::before {
+  display: none;
+}
+
+/* inventator / contribuitori */
+:root {
+  --option-selection-background-color: #e8c44c;
+  --option-selection-background-color-dark: #ffef5d;
+  --option-selection-text-color: rgb(255, 255, 255);
+  --option-selection-text-size: 30px;
+}
+
+.options-screen {
+  padding-top: calc(100vw / 4) !important;
+}
+
+.options-selection {
+  margin-inline: 0;
+  border-radius: 15px;
+}
+
+.option-categorie > h1 {
+  padding-block: 1vh;
+  font-size: var(--option-selection-text-size);
+  color: var(--option-selection-text-color);
+}
+
+#matematica {
+  background-color: var(--option-selection-background-color);
+  border-bottom-left-radius: 150px;
+  border-top-right-radius: 15px;
+  border-top-left-radius: 15px;
+}
+
+#arhitectura,
+#biologie,
+#fizica {
+  background-color: var(--option-selection-background-color-dark);
+  border-top-right-radius: 150px;
+  border-bottom-left-radius: 150px;
+}
+
+#aeronautica,
+#medicina {
+  background-color: var(--option-selection-background-color);
+  border-bottom-left-radius: 150px;
+  border-top-right-radius: 150px;
+}
+
+.light {
+  background-color: var(--option-selection-background-color);
+}
+
+.opus_light {
+  background-color: var(--option-selection-background-color-dark);
+}
+
+.opus_light:nth-child(1) {
+  border-top-right-radius: 15px;
+  border-top-left-radius: 15px;
+}
+
+.option-categorie {
+  padding-block: 2vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  scroll-margin: 22.5vh;
+}
+
+.option-categorie > main {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  justify-items: center;
+}
+
+#arhitectura > main > article,
+#fizica > main > article {
+  grid-column: span 4;
+}
+
+#biologie > main > article:nth-child(5),
+#aeronautica > main > article:nth-child(3) {
+  grid-column: span 2;
+}
+
+@media screen and (max-width: 400px) {
+ .main-selector {
+  padding-top: 250px;
+ }
+}
+
+@media screen and (min-width: 400px) {
+  /* primul sector : vidoe + text */
+  .titlu {
+    --font-size-titlu: 40px;
+  }
+
+  /* al doilea sector : selectarea */
+  .main-selector {
+    padding-top: calc(50vw);
+  }
+}
+
+@media screen and (min-width: 760px) {
+  /* primul sector : vidoe + text */
+  .titlu {
+    --font-size-titlu: 50px;
+  }
+
+  .main-screan > video {
+    height: auto;
+  }
+
+  .main-screan-text > a {
+    display: block;
+  }
+
+  .main-screan::after {
+    --hight-for-img: calc(100vw * 0.37);
+
+    background-image: url("../media/transition/transition.png");
+  }
+
+  /* al doilea sector : selectarea */
+  .main-selector {
+    padding-top: 300px;
+  }
+
+  .select-screan > article:nth-child(2)::before {
+    --hight-for-img: 120px;
+    --width-for-img: 130px;
+    right: 40px;
+  }
+
+  /* inventator / contribuitori */
+
+  .options-selection {
+    margin-inline: 5vw;
+  }
+
+  .option-categorie > main {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+
+  #matematica > main > article {
+    grid-column: span 2;
+  }
+
+  #aeronautica > main {
+    grid-template-columns: 1fr 1fr 1fr !important;
+  }
+
+  #aeronautica > main > article:nth-child(3) {
+    grid-column: span 1;
+  }
+
+  #biologie > main > article:nth-child(5) {
+    grid-column: span 4;
+  }
+}
+
+@media screen and (min-width: 1300px) {
+  /* primul sector : vidoe + text */
+  .titlu {
+    --font-size-titlu: 75px;
+    padding-inline: 10vw;
+  }
+
+  .main-screan > video {
+    height: 100vh;
+  }
+
+  /* al doilea sector : selectarea */
+  .main-selector {
+    padding-top: 320px;
+    padding-bottom: 180px;
+  }
+
+  .select-screan > article:nth-child(2)::before {
+    content: none;
+  }
+
+  .select-screan {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 450px;
+  }
+
+  .select-screan > article:nth-child(4) {
+    grid-column: span 3;
+    width: 100%;
+  }
+
+  .select-screan > article:nth-child(4) > main {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 100%;
+    justify-items: center;
+  }
+
+  .select-screan > article:nth-child(3)::before {
+    display: block;
+    --hight-for-img: 120px;
+    --width-for-img: 130px;
+    right: 40px;
+  }
+
+  .select-screan > article:nth-child(4)::after {
+    display: none;
+  }
+
+  #codrin > article:nth-child(2)::after {
+    display: block;
+    --hight-for-img: 180px;
+    --width-for-img: 260px;
+    right: calc(100vw / 2 - 130px);
+  }
+
+  .select-screan > article:nth-child(1),
+  .select-screan > article:nth-child(3),
+  #codrin > article:nth-child(1),
+  #codrin > article:nth-child(3) {
+    transform: translate(0, 90px);
+  }
+
+  .options-screen {
+    padding-top: 0 !important;
+  }
+}

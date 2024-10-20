@@ -1,0 +1,201 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Agbalumo&display=swap');
+
+:root {
+  --baby-blue: #AEDEFC;
+  --titlu-white: #FFF6F6;
+  --options-color: #F875AA;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  user-select: none;
+}
+
+header {
+  display: flex;
+  justify-content: first baseline;
+  align-items: center;
+  flex-direction: row;
+  background-color: var(--baby-blue);
+  font-family: 'Agbalumo';
+  position: relative;
+}
+
+.titlu {
+  color: var(--titlu-white);
+}
+
+.titlu > h1 {
+  font-size: 100px;
+}
+
+.titlu > p {
+  margin-top: -20px;
+}
+
+#val {
+  position: absolute;
+}
+
+.optiuni > article {
+  display: flex;
+  justify-content: center;
+}
+
+.big,
+.small {
+  --inaltime: 200px;
+  --lungime: 220px;
+  background-color: #AEDEFC;
+  padding: 10px;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+  -webkit-box-shadow: 5px 5px 16px 2px rgba(0,0,0,0.61); 
+  box-shadow: 5px 5px 16px 2px rgba(0,0,0,0.61);
+  transition: 1s;
+}
+
+.small {
+  height: var(--inaltime);
+  width: var(--lungime);
+}
+
+.big {
+  height: calc(2 * var(--inaltime) + 30px);
+  width: calc(2 * var(--lungime) + 120px);
+}
+
+a {
+  display: contents;
+  text-decoration: none;
+}
+
+.big > h1,
+.small > h1 {
+  font-size: 20px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  top: 40%;
+  transition: 1s;
+  font-size: 33px;
+  font-family: 'Agbalumo';
+  color: var(--titlu-white);
+}
+
+@media screen and (max-width: 1000px) {
+  .optiuni {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr) !important;
+    gap: 10px;
+  }
+}
+
+.optiuni {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  background-color: var(--options-color);
+  padding: 5vw;
+}
+
+.bacle {
+  grid-column: 1 / 3;
+  grid-row: 1/3;
+}
+
+.small:hover .book {
+  scale: 25%;
+  top: -50%;
+  right: -56%;
+  transform: rotate(0);
+  transition: 1s;
+  transform-style: preserve-3d;
+}
+
+.big:hover > h1, 
+.small:hover > h1 {
+  align-self: normal;
+  transition: 1s;
+  top: 15%;
+  font-size: 25px;
+}
+
+.big:hover, 
+.small:hover {
+  -webkit-box-shadow: 9px 9px 18px 7px rgba(0,0,0,0.55); 
+  box-shadow: 9px 9px 18px 7px rgba(0,0,0,0.55);
+  transition: 1s;
+}
+
+.book {
+  position: absolute;
+  scale: 15%;
+  top: -65px;
+  right: -50px;
+  transform: rotate(20deg);
+  transition: 1s;
+  z-index: 1;
+}
+
+img {
+  opacity: 90%;
+}
+
+#joystick {
+  scale: 30%;
+  transform: rotate(225deg);
+  position: absolute;
+  bottom: -50%;
+  left: -45%;
+  transition: 1s;
+  z-index: 1;
+}
+
+#game {
+  scale: 35%;
+  transform: rotate(-10deg);
+  position: absolute;
+  bottom: -43%;
+  right: -30%;
+  transition: 1s;
+  z-index: 1;
+}
+
+.big:hover > #game {
+  transform: rotate(0deg);
+  right: 6%;
+  scale: 65%;
+  bottom: -10%;
+}
+
+.big:hover > #joystick {
+  scale: 40%;
+  bottom: -43%;
+  left: -35%;
+}
+
+.final {
+  background-color: var(--options-color);
+  position: relative;
+}
+
+.final >div {
+  position: absolute;
+  bottom: -50px;
+  height: 70px;
+  background-color: var(--baby-blue);
+  width: 100%;
+  font-family: 'Agbalumo';
+  color: #FFF6F6;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}

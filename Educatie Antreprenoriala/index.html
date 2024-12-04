@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Felix Fit</title>
+  <link rel="stylesheet" href="./styles.css">
+  <script src="script.js" defer></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+  </style>
+</head>
+<body>
+  <div id="home"></div>
+    <!-- header styles / navigation bar -->
+  <header class="nav-bar">
+    <div class="logo">
+      <h1 id="logo">HELIX FIT</h1>
+    </div>
+    <nav class="nav-links">
+      <a href="#home">Home</a>
+      <a href="#About">Despre noi</a>
+      <a href="#price">Prețuri</a>
+      <a href="#biciclete">Biciclete</a>
+      <a href="#Contact">Contact</a>
+    </nav>
+  </header>
+    <!-- main body / welcome imagine -->
+  <div class="main-title">
+    <video src="./img/backgym.mp4" muted loop autoplay></video>
+    <div class="overlay"></div>
+    <div class="main-text">
+      <h2>Nu te opri!</h2>
+      <h3>Descoperă-ți întregul potențial!</h3>
+    </div>
+  </div>
+    <!-- despte noi -->
+  <div class="About">
+      <!-- prima bucata din despre noi -->
+      <div class="about-one">
+        <div class="about-img">
+          <img id="About" src="./img/pexels-kampus-production-6763758.jpg" alt="imagine cu backetball">
+        </div>
+        <div class="about-text">
+          <h2 class="mid-title">Descoperă Felix Fit</h2><br>
+          <p>Felix Fit este o sală de fitness pentru presoane cu și fără dizabilități. Aceasta are terenuri pentru diferite sporturi, spațiu închis dar și deschis, toate in orasul Timișoara.</p><br>
+          <div class="btn-font">
+            <button class="btn" data-btn>Descoperă</button>
+            <div class="checkmark-container">
+              <svg x="0px" y="0px" fill="none" class="checkmark-svg" viewBox="0 0 25 30">
+              <path d="M2,19.2C5.9,23.6,9.4,28,9.4,28L23,2"/>
+              </svg>
+            </div>
+          </div>
+        </div>
+      </div>
+        <!-- a doua bucata din despre noi -->
+      <div class="about-two">
+        <div class="about-text">
+          <h2 class="mid-title">Timișoara</h2><br>
+          <h3>Un oras cu o istorie cât toată România</h3>
+          <br>
+          <p>Cel mai probabil, cunoasteți Timișoara drept orașul Revoluției din 1989. Dar aici, de-a lungul secolelor, au conviețuit numeroase etnii, fiecare contribuind cu ceva la evoluția socio-culturală și arhitecturală a orașului.</p>
+        </div>
+        <div class="about-img">
+          <img src="./img/06b291e8-city-14912-171317ad83a.jpg" alt="imagine cu orasul">
+        </div>
+      </div>
+        <!-- a treia bucata din despte noi -->
+      <div class="about-three">
+        <div class="about-three-title">
+          <h2 class="mid-title">Antrenează-te cu profesioniștii</h2>
+          <hr color="#fff" size="5px" width="30%">
+        </div>
+        <div class="about-three-text">
+          <div class="about-text">
+            <p>Antrenează-te în aceleași condiții și cu aceleași echipamente pe care profesioniștii le folosesc pentru a ajunge în cea mai bună formă. Acest drum nu trebuie facut singur, ci cu antrenorii noștri profesioniștii.</p>
+          </div>
+          <div>
+            <img src="./img/180603_AA_Gary-Bogdon-Arials130.jpg" alt="teren tenis img">
+          </div>
+        </div>
+      </div>
+  </div>
+    <!-- lista cu preturi -->
+  <div class="pret-text" id="price">
+    <h2>Pachetele noastre</h2>
+    <p>Prețuri mici și calitative.</p>
+  </div>
+  <div class="container">
+    <div class="main-price-cont">
+      <div class="title">
+        <h2>Începator</h2>
+      </div>
+      <div class="continut">
+        <ul>
+          <li class="yes">Acces la echipamentele sportive</li>
+          <li class="yes"><span class="antrenor">Antrenor comun</span></li>
+          <li class="no"><span class="time">Timp nelimitat</span></li>
+          <li class="no">Antrenor propriu</li>
+          <li class="no">Acces la teren sportiv</li>
+        </ul>
+      </div>
+      <div class="sep"></div>
+      <div class="buy">
+        <h3 class="price">150 lei</h2>
+        <button class="btn2">Cumpără</button>
+      </div>
+    </div>
+    <div class="mid-price-cont">
+      <div class="title">
+        <h2>Pro</h2>
+      </div>
+      <div class="continut">
+        <ul>
+          <li class="yes">Acces la echipamentele sportive</li>
+          <li class="yes"><span class="antrenor">Antrenor comun</span></li>
+          <li class="yes"><span class="time">Timp nelimitat</span></li>
+          <li class="yes">Antrenor propriu</li>
+          <li class="yes">Acces la teren sportiv</li>
+        </ul>
+      </div>
+      <div class="sep"></div>
+      <div class="buy">
+        <h3 class="price">215 lei</h2>
+        <button class="btn2">Cumpără</button>
+      </div>
+    </div>
+    <div class="main-price-cont">
+      <div class="title">
+        <h2>Normal</h2>
+      </div>
+      <div class="continut">
+        <ul>
+          <li class="yes">Acces la echipamentele sportive</li>
+          <li class="yes"><span class="antrenor">Antrenor comun</span></li>
+          <li class="no"><span class="time">Timp nelimitat</span></li>
+          <li class="no">Antrenor propriu</li>
+          <li class="yes">Acces la teren sportiv</li>
+        </ul>
+      </div>
+      <div class="sep"></div>
+      <div class="buy">
+        <h3 class="price">175 lei</h2>
+        <button class="btn2">Cumpără</button>
+      </div>
+    </div>
+  </div>
+  <div class="after-text">
+    <h2>Personalizează-ți pachetul : </h2>
+    <button class="btn">Crează</button>
+  </div>
+    <!-- biciclete -->
+  <div id="biciclete">
+    <div class="img-biciclete"></div>
+    <div class="f-u">
+      <div class="f-u-1">
+        <h2>ÎNCHIRIERE BICICLETE</h2>
+        <p>Fie că vrei sa te relaxezi pedalând o ora, fie că mergi sa vezi imprejurimile orasului cu prietenii sau te aventurezi mai multe zile la Felix Fit gasești bicicleta de care ai nevoie.</p>
+        <button class="btn">Descoperă</button>
+      </div>
+    </div>
+  </div>
+    <!-- pagina contact -->
+  <div id="Contact">
+    <div class="contact-text">
+      <p>Vă rugăm să completați acest formular și un reprezentant va răspunde în scurt timp.</p>
+    </div>
+    <form action="" class="contact-div">
+      <div class="options">
+        <input type="text" name="1" id="" placeholder="Nume">
+        <input type="text" name="2" id="" placeholder="Prenume">
+        <input type="email" name="3" id="" placeholder="Email">
+        <input type="text" name="4" id="" placeholder="Telefon">
+      </div>
+      <div class="alege">
+        <p>Alege motivul care reprezintă dorința dumneavoastră.</p>
+        <div>
+        <input type="checkbox" name="cod" id=""><span>Plângere</span></div>
+        <div>
+        <input type="checkbox" name="cod" id=""><span>Întrebare</span></div>
+      </div>
+      <textarea name="5" id="" cols="59" rows="13" style="width: 450px; height: 180px;"></textarea>
+      <div class="hello"><button class="btn">Trimite</button></div>
+    </form>
+  </div>
+  <footer>
+    <div class="cr"><div class="hro"></div></div>
+    <div class="cc">
+      <h4>zilnic.fit@gmail.com</h4>
+      <h4>Strada Profitului Nr.23</h4>
+      <h4>0757896231</h4>
+    </div>
+    <div class="cr"><div class="hro"></div></div>
+    <div class="cpy">
+      <h4> &copy;FelixFit</h4>
+    </div>
+  </footer>
+</body>
+</html>

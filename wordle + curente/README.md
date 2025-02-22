@@ -4,7 +4,11 @@
 This is the home page... every div is a diffrent web page whit diffrent info for the specific literary movement
 
 ![](https://github.com/user-attachments/assets/dcad777b-280e-4d25-b816-29c547a989c9)
-
+<style type = "text/css">
+  img {
+    width = 500px;
+  }
+</style>
 
 The BACle is a parrody to Wrodle and it works in the same way, just that it has more spaces :D
 

@@ -1,5 +1,5 @@
 > [!NOTE]  
-> ### Every div is animated! All the .svg and .png are from [flaticon](https://www.flaticon.com/)  
+> ### Every div is animated! All the .svg and .png are from [flaticon](https://www.flaticon.com/) And some cut into little parts to make a new .png or what not
 
 This is the home page... every div is a different web page with different info for the specific literary movement. 
 The BACle is a parody of Wordle and it works in the same way, just that it has more spaces. :D

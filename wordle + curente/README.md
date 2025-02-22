@@ -9,7 +9,7 @@ The BACle is a parrody to Wrodle and it works in the same way, just that it has 
 
 ![](https://github.com/user-attachments/assets/157c65c9-4a89-4623-ab37-9bdb92931d10)
 
-<style type = "text/css">
+<style>
   img {
     width: 500px;
   }
